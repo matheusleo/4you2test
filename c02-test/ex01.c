@@ -11,5 +11,5 @@ int	main(void)
 	printf("\n");
 	char dest1[4] = "math";
 	ft_strncpy(dest1, src, 4);
-	printf("Esperado: leon\nResultado: %s\n", dest1);
+	printf("Esperado: leonleonardo\nResultado: %s\n", dest1);
 }
