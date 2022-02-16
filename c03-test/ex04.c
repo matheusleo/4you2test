@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int	main(void)
 {
 	char *word1 = "12matheus34leo";
