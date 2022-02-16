@@ -18,4 +18,3 @@ int	main(void)
 	printf("Resultado: (%s)\n", word1);
 	printf("Retornado: (%s)\n", result2);
 }
-z
