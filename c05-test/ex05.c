@@ -13,6 +13,6 @@ int	main(void)
 	printf("Esperado: 3\nResultado: %d\n\n", result1);
 	printf("Esperado: 4\nResultado: %d\n\n", result2);
 	printf("Esperado: 9\nResultado: %d\n\n", result3);
-	printf("Esperado: 25\nResultado: %d\n", result4);
+	printf("Esperado: 25\nResultado: %d\n\n", result4);
 	printf("Esperado: 625\nResultado: %d\n", result5);
 }
