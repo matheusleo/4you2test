@@ -1,16 +1,25 @@
 #include <stdio.h>
+#include <unistd.h>
+void	test(int c_size)
+{
+	char			*source;
+	char			dest[19];
+	unsigned int	result;
+
+	source = "Hello there, Venus";
+	result = ft_strlcpy(dest, source, c_size);
+	//Print expected result
+	write(1, "Resultado esperado: ", 21);
+	write(1, source, c_size - 1);
+	write(1, "\n", 1);
+	//Print program output
+	printf("DEST String: (%s)\nSRC Size: %d\nComprimento: %d\n\n", dest, c_size, result);
+}
 
 int	main(void)
 {
-	char	dest[20] = "math";
-	char	*src = "leonardo";
-	int	result = ft_strlcpy(dest, src, 9);
-	printf("Esperado: 8\nResultado: %d\n", result);
-	printf("Esperado: (leonardo)\nResultado: (%s)\n", dest);
-	printf("\n");
-	char	dest2[5] = "math";
-	char	*src2 = "leonardo";
-	int	result2 = ft_strlcpy(dest2, src2, 5);
-	printf("Esperado: 8\nResultado: %d\n", result2);
-	printf("Esperado: (leon)\nResultado: (%s)\n", dest2);
+	test(19);
+	test(10);
+	test(1);
+	test(0);
 }
